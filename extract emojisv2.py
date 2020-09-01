@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 17 16:39:14 2019
 
-@author: xabuka
-"""
 
 import emoji
 # This regex implementation is backwards-compatible with the standard ‘re’ module, but offers additional functionality.
@@ -43,13 +39,12 @@ def extract_emojis(tweets):
     return emo
 
 
-pos_file = 'arabic_tweets_tsv/Arabic_tweets_positive_20191104.tsv'
-neg_file = 'arabic_tweets_tsv/Arabic_tweets_negative_20191104.tsv'
+
 
 pos_data, pos_labels = read_tsv(pos_file)
 neg_data, neg_labels = read_tsv(neg_file)
 
-# line = ["🤔 🙈 me así, se 😌 ds 💕👭👙 hello 👩🏾‍🎓 emoji hello 👨‍👩‍👦‍👦 how are 😊 you today🙅🏽🙅🏽"]
+
 
 pos_emos = extract_emojis(pos_data)
 neg_emos = extract_emojis(neg_data)
