@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 17 16:39:14 2019
 
-@author: xabuka
-"""
 
 import emoji
 # This regex implementation is backwards-compatible with the standard ‘re’ module, but offers additional functionality.
@@ -52,15 +48,11 @@ def split_count(text):
     return emoji_list
 
 
-pos_training = '../../Shami-Sentiment-Analyzer/data/Motaz_corpus/train_Arabic_tweets_positive_20190413.tsv'
-neg_training = '../../Shami-Sentiment-Analyzer/data/Motaz_corpus/train_Arabic_tweets_negative_20190413.tsv'
 
-pos_testing = '../../Shami-Sentiment-Analyzer/data/Motaz_corpus/test_Arabic_tweets_positive_20190413.tsv'
-neg_testing = '../../Shami-Sentiment-Analyzer/data/Motaz_corpus/test_Arabic_tweets_negative_20190413.tsv'
 
 x_pos, x_neg = load_twitter(pos_training, neg_training, pos_testing, neg_testing)
 
-# line = ["🤔 🙈 me así, se 😌 ds 💕👭👙 hello 👩🏾‍🎓 emoji hello 👨‍👩‍👦‍👦 how are 😊 you today🙅🏽🙅🏽"]
+
 neg = list()
 for x in x_neg:
     counter = split_count(x)
