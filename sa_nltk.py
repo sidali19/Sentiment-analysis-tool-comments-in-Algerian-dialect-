@@ -11,11 +11,11 @@ from textutil import *
 
 
 def do_sa(n, classifier):
-    pos_train_file = 'arabic_tweets_tsv/train_pos_20181206_1k.tsv'
-    neg_train_file = 'arabic_tweets_tsv/train_neg_20181206_1k.tsv'
+    pos_train_file = ''
+    neg_train_file = ''
 
-    pos_test_file = 'arabic_tweets_tsv/test_pos_20181206_1k.tsv'
-    neg_test_file = 'arabic_tweets_tsv/test_neg_20181206_1k.tsv'
+    pos_test_file = ''
+    neg_test_file = ''
     print('data files')
     print('train file (pos)', pos_train_file)
     print('train file (neg)', neg_train_file)
@@ -70,8 +70,8 @@ def do_sa(n, classifier):
     print(all_features_freq)
     print('sample frequencies')
     print(all_features_freq.most_common(20))
-    word = 'في'
-    print('freq of word {} is {}'.format(word, all_features_freq.freq('في')))
+    word = ''
+    print('freq of word {} is {}'.format(word, all_features_freq.freq('')))
     print('features frequencies are computed')
     print('------------------------------------')
     thr = min_freq / len(all_features)
