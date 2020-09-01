@@ -1,0 +1,8 @@
+emoji
+numpy
+nltk
+sklearn
+regex
+libarchive
+pyunpack
+patool
