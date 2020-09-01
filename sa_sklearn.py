@@ -17,11 +17,11 @@ from textutil import *
 
 
 def load():
-    pos_train_file = 'arabic_tweets_tsv/train_pos_20181206_1k.tsv'
-    neg_train_file = 'arabic_tweets_tsv/train_neg_20181206_1k.tsv'
+    pos_train_file = ''
+    neg_train_file = ''
 
-    pos_test_file = 'arabic_tweets_tsv/test_pos_20181206_1k.tsv'
-    neg_test_file = 'arabic_tweets_tsv/test_neg_20181206_1k.tsv'
+    pos_test_file = ''
+    neg_test_file = ''
 
     pos_train_data, pos_train_labels = read_tsv(pos_train_file)
     neg_train_data, neg_train_labels = read_tsv(neg_train_file)
