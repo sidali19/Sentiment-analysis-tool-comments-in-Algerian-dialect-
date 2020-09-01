@@ -75,24 +75,24 @@ neg_lex = load_lexicon('emoji_lex/negative_emoji_v3.txt')
 print(len(pos_lex), len(neg_lex))
 
 ##############################################
-pos_file = 'arabic_tweets_tsv/20191104/Arabic_tweets_positive_20191104.tsv'
-neg_file = 'arabic_tweets_tsv/20191104/Arabic_tweets_negative_20191104.tsv'
+pos_file = ''
+neg_file = ''
 pos_data, pos_labels = read_tsv(pos_file)
 neg_data, neg_labels = read_tsv(neg_file)
 print('before:', 'pos', len(pos_data), 'neg', len(neg_data))
 
 all_tweets = label_mix(pos_data, neg_data)
-outfile_name = 'arabic_tweets_tsv/20191104/3labels/Arabic_tweets_20191104.tsv'
+outfile_name = ''
 write_tsv(outfile_name, all_tweets)
 ###########################################
 
 
-pos_file = 'arabic_tweets_tsv/20190413/Arabic_tweets_positive_20190413.tsv'
-neg_file = 'arabic_tweets_tsv/20190413/Arabic_tweets_negative_20190413.tsv'
+pos_file = ''
+neg_file = ''
 pos_data, pos_labels = read_tsv(pos_file)
 neg_data, neg_labels = read_tsv(neg_file)
 print('before:', 'pos', len(pos_data), 'neg', len(neg_data))
 
 all_tweets = label_mix(pos_data, neg_data)
-outfile_name = 'arabic_tweets_tsv/20190413/3labels/Arabic_tweets_20190413.tsv'
+outfile_name = ''
 write_tsv(outfile_name, all_tweets)
